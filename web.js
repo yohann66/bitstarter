@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 var fs = require('fs');
-app.get('/home/ubuntu/bitstarter', function(request, response) {
+app.get('/', function(request, response) {
     response.send(Buffer.toString(fs.readFileSync('index.html')));
 });
 
