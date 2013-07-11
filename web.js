@@ -6,7 +6,7 @@ app.g et('/', function(request, response) {
     response.send("hello world 2!");
 });
 
-fs.readFile('/etc/passwd', function (err, data) {
+fs.readFile('/home/ubuntu/bitstarter/index.html', function (err, data) {
     if (err) throw err;
     console.log(data);
 });
